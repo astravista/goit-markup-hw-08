@@ -1,22 +1,154 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
+  color: #212121;
 }
 
 li {
   list-style: none;
   text-decoration: none;
 }
+
+/* --site nav-- */
+
 .site-nav .link {
-  color: black;
+  color: #000000;
 }
 .site-nav .link:focus,
 .link:hover {
   color: #2196f3;
 }
 
-.button {
+.page-header {
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+
+/* --не получилось, нужно задать два цвета логотипу-- */
+.header-logo {
+}
+
+.hero {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+.hero-title {
+  font-family: "Roboto" sans-serif;
   font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.title-doing-section,
+.command-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.command-name {
+  font-family: "Roboto" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.command-post {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
   cursor: pointer;
-  cursor: auto;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+
+.button-section {
+  font-style: normal;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.button-section:hover,
+.button-section:focus {
+  color: #ffffff;
+  background-color: #188ce8;
+}
+
+.footer-link-adress {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.link-mail,
+.link-tel {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gallery-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.gallery-text {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
