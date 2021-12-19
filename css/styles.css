@@ -1,7 +1,12 @@
+:root {
+  --brand-color: #212121;
+  --link-navigator: #2196f3;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  color: #212121;
+  color: var(--brand-color);
 }
 
 li {
@@ -9,14 +14,30 @@ li {
   text-decoration: none;
 }
 
-/* --site nav-- */
-
-.site-nav .link {
+/* --шапка навигации-- */
+.site-nav,
+.link {
+  text-decoration: none;
   color: #000000;
 }
-.site-nav .link:focus,
+
+.contact {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.site-nav,
+.link:focus,
 .link:hover {
-  color: #2196f3;
+  color: var(--link-navigator);
+}
+
+.contact:focus,
+.contact:hover {
+  color: var(--link-navigator);
 }
 
 .page-header {
@@ -26,17 +47,25 @@ li {
   top: 0px;
 }
 
-/* --не получилось, нужно задать два цвета логотипу-- */
-.header-logo {
-  font-family: "Raleway";
+/* --двухцветный логотип-- */
+.header-logo,
+.header-logo-web {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #000000;
 }
 
+.header-logo {
+  color: #000000;
+}
+.header-logo-web {
+  color: var(--link-navigator);
+}
+
+/* --герой-- */
 .hero {
   width: 1600px;
   height: 600px;
@@ -45,17 +74,18 @@ li {
   background: #2f303a;
 }
 .hero-title {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
+/* --особенности-- */
 .features-title {
   font-weight: bold;
   font-size: 14px;
@@ -71,6 +101,7 @@ li {
   color: #757575;
 }
 
+/* --чем мы занимаемся-- */
 .title-doing-section,
 .command-title {
   font-weight: bold;
@@ -80,8 +111,8 @@ li {
   letter-spacing: 0.03em;
 }
 
+/* --команда-- */
 .command-name {
-  font-family: "Roboto" sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -97,9 +128,10 @@ li {
   color: #757575;
 }
 
+/* --кнопка веб-студии -- */
 .button {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--link-navigator);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -113,9 +145,8 @@ li {
   background-color: #188ce8;
 }
 
+/* --кнопки портфолио-- */
 .button-section {
-  font-style: normal;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -130,21 +161,7 @@ li {
   background-color: #188ce8;
 }
 
-.footer-link-adress {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.link-mail,
-.link-tel {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
+/* --галерея с фото-- */
 .gallery-title {
   font-weight: bold;
   font-size: 18px;
@@ -158,4 +175,45 @@ li {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+/* --подвал-- */
+
+.footer {
+  background: #2f303a;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.footer-logo-web {
+  color: var(--link-navigator);
+}
+.footer-logo-studio {
+  color: #ffffff;
+}
+
+.footer-link-adress {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.link-mail,
+.link-tel {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
