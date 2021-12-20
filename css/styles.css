@@ -1,6 +1,7 @@
 :root {
   --brand-color: #212121;
   --link-navigator: #2196f3;
+  --color-contact: #757575;
 }
 
 body {
@@ -16,7 +17,8 @@ li {
 
 /* --шапка навигации-- */
 .site-nav,
-.link {
+.link,
+.header-logo {
   text-decoration: none;
   color: #000000;
 }
@@ -27,24 +29,26 @@ li {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--color-contact);
 }
+/* --ссылки навигации-- */
 .site-nav,
 .link:focus,
 .link:hover {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--link-navigator);
+}
+
+.сurrent {
   color: var(--link-navigator);
 }
 
 .contact:focus,
 .contact:hover {
   color: var(--link-navigator);
-}
-
-.page-header {
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
 }
 
 /* --двухцветный логотип-- */
@@ -67,10 +71,7 @@ li {
 
 /* --герой-- */
 .hero {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+  text-align: center;
   background: #2f303a;
 }
 .hero-title {
@@ -98,7 +99,7 @@ li {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color-contact);
 }
 
 /* --чем мы занимаемся-- */
@@ -125,7 +126,7 @@ li {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color-contact);
 }
 
 /* --кнопка веб-студии -- */
@@ -147,12 +148,14 @@ li {
 
 /* --кнопки портфолио-- */
 .button-section {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  color: var(--brand-color);
 }
 
 .button-section:hover,
@@ -174,7 +177,7 @@ li {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color-contact);
 }
 
 /* --подвал-- */
@@ -216,4 +219,11 @@ li {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.link-mail:hover,
+.link-mail:focus,
+.link-tel:hover,
+.link-tel:focus {
+  color: #ffffff;
 }
