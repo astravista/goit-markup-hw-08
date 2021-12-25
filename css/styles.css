@@ -4,6 +4,62 @@
   --color-contact: #757575;
 }
 
+html,
+portfolio {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container-header {
+  width: 1600;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: inline-block;
+  padding-left: 215px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: yellow;
+  margin-right: 93px;
+}
+
+.site-nav {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 294px;
+  background-color: tomato;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
