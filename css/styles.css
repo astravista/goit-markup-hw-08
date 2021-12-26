@@ -36,6 +36,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -241,7 +243,8 @@ li {
 
 /* --команда-- */
 
-.command-decoration {
+.command-decoration,
+.gallery-decoration {
   margin-top: 94px;
   margin-left: 215px;
   margin-right: 0;
@@ -324,7 +327,37 @@ li {
   background-color: #188ce8;
 }
 
+.button-decoration {
+  display: inline-block;
+  justify-content: center;
+  margin-bottom: 34px;
+  /* outline: 1px solid red; */
+}
+
+.button-decoration:last-child {
+  margin-right: 0;
+}
 /* --галерея с фото-- */
+
+.gallery-decoration,
+.gallery-section {
+  display: inline-block;
+  text-align: left;
+}
+.gallery-decoration {
+  margin-top: 94px;
+  width: 1200px;
+}
+
+.gallery-decoration-button {
+}
+
+.gallery-decoration-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
 .gallery-title {
   font-weight: bold;
   font-size: 18px;
