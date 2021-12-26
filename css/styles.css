@@ -38,29 +38,6 @@ img {
   display: block;
 }
 
-.container-header {
-  width: 1230;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.header-logo {
-  display: inline-block;
-  padding-left: 215px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
-
-.site-nav {
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  width: 294px;
-  text-align: center;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -70,6 +47,41 @@ body {
 li {
   list-style: none;
   text-decoration: none;
+}
+
+.page-header > .container-header,
+.site-nav,
+.site-contact {
+  display: flex;
+}
+.container-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 215px;
+  align-items: center;
+}
+
+.nav-header-conteiner {
+  display: flex;
+}
+
+.site-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 93px;
+  width: 294px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.site-contact {
+  margin-left: 331px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-contact .item + .item {
+  margin-left: 50px;
 }
 
 /* --шапка навигации-- */
@@ -88,6 +100,7 @@ li {
   letter-spacing: 0.02em;
   color: var(--color-contact);
 }
+
 /* --ссылки навигации-- */
 .site-nav,
 .link:focus,
@@ -120,6 +133,9 @@ li {
 }
 
 .header-logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: #000000;
 }
 .header-logo-web {
@@ -131,10 +147,9 @@ li {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  display: inline-block;
   width: 1600px;
-  text-align: center;
-  margin-left: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: #2f303a;
 }
 
@@ -147,18 +162,36 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  display: inline-block;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
-  width: 696px;
   text-align: center;
+  width: 696px;
 }
 
 /* --особенности-- */
 
-.features-decoration {
-  margin-top: 94px;
+.container {
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+.features-decoration .features {
+  display: flex;
+  width: 1200px;
+  margin-top: 94px;
+  margin-bottom: 0;
+  margin-left: 215px;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.fetures-list {
+  width: 270px;
+}
+
 .features-title {
   font-weight: bold;
   font-size: 14px;
@@ -179,7 +212,16 @@ li {
 
 .doing-decoration {
   margin-top: 94px;
+  align-content: center;
 }
+
+.doing-section {
+  display: flex;
+  width: 1200px;
+  margin-left: 215px;
+  justify-content: space-between;
+}
+
 .title-doing-section,
 .command-title {
   font-weight: bold;
@@ -201,14 +243,30 @@ li {
 
 .command-decoration {
   margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 0;
+  width: 1200px;
 }
+
+.command-section {
+  display: inline-block;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.command-section:last-child {
+  margin-right: 0;
+}
+
 .command-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .command-post {
@@ -217,7 +275,7 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-contact);
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 /* --кнопка веб-студии -- */
@@ -287,16 +345,24 @@ li {
 .footer {
   background: #2f303a;
   margin-top: 94px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+
+.footer:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-logo {
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 60px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 60px;
 }
 
 .footer-logo-web {
