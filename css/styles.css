@@ -306,6 +306,7 @@ li {
 }
 
 /* --кнопки портфолио-- */
+
 .button-section {
   font-family: inherit;
   font-weight: 500;
@@ -327,6 +328,7 @@ li {
   background-color: #188ce8;
 }
 
+/* конопки не становятся по центру */
 .button-decoration {
   display: inline-block;
   justify-content: center;
@@ -349,6 +351,7 @@ li {
   width: 1200px;
 }
 
+/* почему не работает calc */
 .gallery-decoration-list {
   display: flex;
   flex-wrap: wrap;
