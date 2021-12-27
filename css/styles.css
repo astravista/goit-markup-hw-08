@@ -63,7 +63,7 @@ li {
   align-items: center;
 }
 
-.nav-header-conteiner {
+.nav-header-container {
   display: flex;
 }
 
@@ -183,7 +183,7 @@ li {
 .features-decoration .features {
   display: flex;
   width: 1200px;
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 0;
   margin-left: 215px;
   margin-right: auto;
@@ -213,7 +213,7 @@ li {
 /* --чем мы занимаемся-- */
 
 .doing-decoration {
-  margin-top: 94px;
+  padding-top: 94px;
   align-content: center;
 }
 
@@ -245,7 +245,8 @@ li {
 
 .command-decoration,
 .gallery-decoration {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-left: 215px;
   margin-right: 0;
   width: 1200px;
@@ -331,14 +332,18 @@ li {
 /* конопки не становятся по центру */
 .button-decoration {
   display: inline-block;
+  /* display: inline-block;
   justify-content: center;
   margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
   /* outline: 1px solid red; */
 }
 
 .button-decoration:last-child {
   margin-right: 0;
-}
+} 
+
 /* --галерея с фото-- */
 
 .gallery-decoration,
@@ -346,16 +351,27 @@ li {
   display: inline-block;
   text-align: left;
 }
-.gallery-decoration {
-  margin-top: 94px;
-  width: 1200px;
-}
 
-/* почему не работает calc */
 .gallery-decoration-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 34px;
+}
+
+.gallery-section {
   flex-basis: calc(100% / 3 - 30px);
+}
+
+/* .gallery-section:not(:ntn-child(3n)) {
+  margin-right: 30px;
+}
+.gallery-section:not(:ntn-last-child(-n + 3)) {
+  margin-bottom: 30px; */
+
+
+.gallery-decoration {
+  padding-top: 94px;
+  width: 1200px;
 }
 
 .gallery-title {
@@ -377,7 +393,6 @@ li {
 
 .footer {
   background: #2f303a;
-  margin-top: 94px;
   padding-bottom: 60px;
   padding-left: 215px;
 }
