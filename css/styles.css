@@ -45,6 +45,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: var(--brand-color);
+  width: 1600px;
 }
 
 li {
@@ -60,19 +61,14 @@ li {
 .container-header {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav-header-container {
-  display: flex;
-  padding-left: 215px;
-}
-
 .site-nav {
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: 93px;
   width: 294px;
   text-align: center;
@@ -81,8 +77,6 @@ li {
 
 .site-contact {
   margin-left: 331px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-contact .item + .item {
@@ -138,24 +132,21 @@ li {
 }
 
 .header-logo {
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
   color: #000000;
 }
+
 .header-logo-web {
   color: var(--link-navigator);
 }
 
 /* --герой-- */
 .hero {
-  margin-top: 0;
-  margin-bottom: 0;
   text-align: center;
-  width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
   background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -167,29 +158,25 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
   text-align: center;
   width: 696px;
+  margin: 0 auto;
 }
 
 /* --особенности-- */
 
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .features-decoration .features {
   display: flex;
-  width: 1200px;
   padding-top: 94px;
-  margin-bottom: 0;
-  margin-left: 215px;
-  margin-right: auto;
+  padding-bottom: 94px;
   justify-content: space-between;
 }
 
@@ -216,14 +203,12 @@ li {
 /* --чем мы занимаемся-- */
 
 .doing-decoration {
-  padding-top: 94px;
+  padding-bottom: 94px;
   align-content: center;
 }
 
 .doing-section {
   display: flex;
-  width: 1200px;
-  margin-left: 215px;
   justify-content: space-between;
 }
 
@@ -248,19 +233,22 @@ li {
 
 .command-decoration,
 .gallery-decoration {
-  padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: 215px;
-  margin-right: 0;
-  width: 1200px;
+  text-align: center;
 }
 
+/* контейнер не ставится по центру */
+
+.gallery-decoration {
+  padding-top: 94px;
+}
 .command-section {
   display: inline-block;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin: 0 auto;
 }
 
 .command-section:last-child {
@@ -299,7 +287,6 @@ li {
   padding: 10px 32px;
   min-width: 200;
   border: 1px solid transparent;
-  margin-bottom: 200px;
   margin-top: 30px;
   text-align: center;
 }
@@ -372,8 +359,8 @@ li {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
@@ -407,25 +394,31 @@ li {
 /* --подвал-- */
 
 .footer {
+  padding-top: 60px;
   background: #2f303a;
-  padding-bottom: 60px;
+  width: 1600px;
+  margin: 0 auto;
   padding-left: 215px;
 }
 
-.footer:not(:last-child) {
-  margin-bottom: 9px;
+.footer-decoration {
+  padding-bottom: 60px;
+}
+
+.footer-decoration:not(:last-child) {
+  padding-bottom: 9px;
 }
 
 .footer-logo {
   display: inline-block;
-  padding-bottom: 20px;
-  padding-top: 60px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .footer-logo-web {
