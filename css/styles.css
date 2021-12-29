@@ -65,7 +65,8 @@ li {
   padding-bottom: 32px;
   align-items: center;
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #ececec;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .site-nav {
@@ -170,7 +171,7 @@ li {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .features-decoration .features {
@@ -237,21 +238,22 @@ li {
   text-align: center;
 }
 
-/* контейнер не ставится по центру */
-
 .gallery-decoration {
   padding-top: 94px;
 }
-.command-section {
-  display: inline-block;
-  margin-right: 30px;
+
+.command-list {
+  display: flex;
+}
+
+.command-item {
+  margin-right: var(--card-set-gap);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin: 0 auto;
 }
 
-.command-section:last-child {
+.command-item:last-child {
   margin-right: 0;
 }
 
@@ -341,9 +343,7 @@ li {
 
 /* --галерея с фото-- */
 
-.gallery-decoration,
 .gallery-section {
-  display: inline-block;
   text-align: left;
 }
 
@@ -351,8 +351,8 @@ li {
   display: flex;
   flex-wrap: wrap;
   padding-top: 34px;
+  margin-bottom: calc(-1 * var(--card-set-gap));
   margin-right: calc(-1 * var(--card-set-gap));
-  margin-bottom: -30px;
 }
 
 .gallery-section {
@@ -369,7 +369,7 @@ li {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--brand-color);
 }
 
 .gallery-text {
