@@ -65,8 +65,8 @@ li {
 .container-header {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   align-items: center;
   background: #ffffff;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -357,7 +357,7 @@ li {
 .gallery-decoration-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 34px;
+  margin-top: 50px;
   margin-bottom: calc(-1 * var(--card-set-gap));
   margin-right: calc(-1 * var(--card-set-gap));
 }
@@ -396,12 +396,9 @@ li {
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
   margin: 0 auto;
-}
-
-.footer-decoration {
-  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -413,7 +410,10 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-bottom: 20px;
+}
+
+.footer-logo-title {
+  margin-bottom: 20px;
 }
 
 .footer-logo-web {
@@ -430,7 +430,6 @@ li {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding-bottom: 9px;
 }
 
 .link-mail,
@@ -441,11 +440,10 @@ li {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 9px;
 }
 
-.footer-decoration:not(:last-child) {
-  padding-bottom: 9px;
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .link-mail:hover,
