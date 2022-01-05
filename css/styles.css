@@ -58,7 +58,7 @@ li {
   display: flex;
 }
 
-.page-header { 
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -80,7 +80,7 @@ li {
 }
 
 .site-contact {
-  margin-left: 331px;
+  margin-left: auto;
 }
 
 .site-contact .item + .item {
@@ -119,6 +119,34 @@ li {
   color: var(--link-navigator);
 }
 
+.mail::before {
+  display: inline-flex;
+  /* align-content: center; */
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../images/envelope.svg");
+}
+
+/* не работает ховер фокус на иконках */
+.site-contact, 
+.item:hover, 
+.item:focus {
+  color: var(--link-navigator);
+}
+
+.tel::before {
+  content: "";
+  display: inline-flex;
+  /* align-content: center;
+  justify-content: center; */
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../images/smartphone.svg");
+}
+
 .contact:focus,
 .contact:hover {
   color: var(--link-navigator);
@@ -150,6 +178,15 @@ li {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
+  background-image: linear-gradient( to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
 }
 
 .hero-title {
@@ -241,7 +278,7 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .gallery-decoration {
@@ -264,7 +301,7 @@ li {
   margin-right: 0;
 }
 
-.command-item-name { 
+.command-item-name {
   padding-top: 30px;
   padding-bottom: 30px;
 }
