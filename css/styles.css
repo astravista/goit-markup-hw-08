@@ -3,6 +3,7 @@
   --link-navigator: #2196f3;
   --color-contact: #757575;
   --card-set-gap: 30px;
+  --color-bg: #FFFFFF;
 }
 
 html,
@@ -68,7 +69,7 @@ li {
   padding-top: 24px;
   padding-bottom: 24px;
   align-items: center;
-  background: #ffffff;
+  background: var(--color-bg)
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
@@ -197,7 +198,7 @@ li {
   line-height: 1.3;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-bg);
   text-align: center;
   width: 696px;
   margin: 0 auto;
@@ -223,8 +224,19 @@ li {
   justify-content: space-between;
 }
 
-.fetures-list {
+.features-list {
   width: 270px;
+}
+
+.list-item {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
 }
 
 .features-title {
@@ -274,10 +286,20 @@ li {
 
 /* --команда-- */
 
-.command-decoration {
-  padding-top: 94px;
+.command-decoration .command-list {
+  display: flex;
+  flex-basis: calc(100% / 4 - 30px);
+  justify-content: center;
   padding-bottom: 94px;
   text-align: center;
+
+  /* outline: 2px solid red; */
+}
+
+.command-decoration {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 94px;
   background-color: #f5f4fa;
 }
 
@@ -288,6 +310,12 @@ li {
 
 .command-list {
   display: flex;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: var(--card-set-gap);
+}
+
+.command-item:last-child {
+  margin-right: 0;
 }
 
 .command-item {
@@ -295,15 +323,19 @@ li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.command-item:last-child {
-  margin-right: 0;
+  /* outline: 2px solid red; */
+  background-color: var(--color-bg);
 }
 
 .command-item-name {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: flex;
+  flex-basis: calc(100% / 4 - 30px);
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
 }
 
 .command-name {
@@ -320,7 +352,7 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-contact);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* --кнопка веб-студии -- */
