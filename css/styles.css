@@ -4,6 +4,7 @@
   --color-contact: #757575;
   --card-set-gap: 30px;
   --color-bg: #ffffff;
+  --color-client:#AFB1B8;
 }
 
 html,
@@ -213,12 +214,11 @@ li {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 
 .features-decoration {
   padding-top: 94px;
-  padding-bottom: 94px;
+  /* outline: 2px solid red; */
 }
 
 .features {
@@ -228,17 +228,16 @@ li {
 
 .features-list {
   width: 270px;
+  height: 250px;
 }
 
 .list-item {
-  display: block;
-  content: "";
+  display: flex;
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-title {
@@ -260,6 +259,7 @@ li {
 /* --чем мы занимаемся-- */
 
 .doing-decoration {
+  padding-top: 94px;
   padding-bottom: 94px;
   align-content: center;
 }
@@ -270,7 +270,8 @@ li {
 }
 
 .title-doing-section,
-.command-title {
+.command-title,
+.clients-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -294,7 +295,6 @@ li {
   justify-content: center;
   padding-bottom: 94px;
   text-align: center;
-  /* outline: 2px solid red; */
 }
 
 .command-decoration {
@@ -318,7 +318,7 @@ li {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #AFB1B8;
+  color: var(--color-client);
 }
 
 .command-link-icon {
@@ -337,7 +337,6 @@ li {
 .command-list {
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
-  margin-right: var(--card-set-gap);
 }
 
 .command-item:last-child {
@@ -374,6 +373,52 @@ li {
   color: var(--color-contact);
   margin-top: 10px;
 }
+
+/* --постоянные клиенты */
+
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-title {
+  margin-bottom: 59px;
+}
+
+.clients-item {
+  height: 92px;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  /* border-color: var(--color-client); */
+  border-radius: 4px;
+  color: var(--color-client);
+}
+
+/* не получается ховер бордера */
+.client-link {
+  fill: currentColor;
+}
+
+.client-link {
+  display: flex;
+  padding: 16px 32px;
+  fill: var(--color-client);
+}
+
+.client-link:hover, .client-link:focus {
+  fill: var(--link-navigator);
+  /* border-color: var(--link-navigator); */
+}
+
+  /* outline: 2px solid red; */
 
 /* --кнопка веб-студии -- */
 .button {
