@@ -3,7 +3,7 @@
   --link-navigator: #2196f3;
   --color-contact: #757575;
   --card-set-gap: 30px;
-  --color-bg: #FFFFFF;
+  --color-bg: #ffffff;
 }
 
 html,
@@ -69,7 +69,7 @@ li {
   padding-top: 24px;
   padding-bottom: 24px;
   align-items: center;
-  background: var(--color-bg)
+  background: var(--color-bg);
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
@@ -131,8 +131,8 @@ li {
 }
 
 /* не работает ховер фокус на иконках */
-.site-contact, 
-.item:hover, 
+.site-contact,
+.item:hover,
 .item:focus {
   color: var(--link-navigator);
 }
@@ -179,10 +179,12 @@ li {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  background-image: linear-gradient( to right,
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)),
-  url("../images/hero.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -235,7 +237,7 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
 }
 
@@ -292,7 +294,6 @@ li {
   justify-content: center;
   padding-bottom: 94px;
   text-align: center;
-
   /* outline: 2px solid red; */
 }
 
@@ -303,9 +304,34 @@ li {
   background-color: #f5f4fa;
 }
 
-.gallery-decoration {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.command-icon-list {
+  display: flex;
+  justify-content: center;
+  margin: 16px 32px 30px 32px;
+}
+
+.command-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #AFB1B8;
+}
+
+.command-link-icon {
+  fill: currentColor;
+}
+
+.command-link + .command-link {
+  margin-left: 10px;
+}
+
+.command-link:hover, .command-link:focus {
+  background-color: #2196F3;
+  color: #ffffff;
 }
 
 .command-list {
@@ -328,12 +354,6 @@ li {
 }
 
 .command-item-name {
-  display: flex;
-  flex-basis: calc(100% / 4 - 30px);
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   margin-top: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
@@ -422,6 +442,11 @@ li {
 }
 
 /* --галерея с фото-- */
+
+.gallery-decoration {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .gallery-decoration-list {
   display: flex;
