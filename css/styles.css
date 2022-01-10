@@ -281,15 +281,13 @@ li {
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
   justify-content: center;
-  padding-bottom: 94px;
   text-align: center;
 }
 
-.command-decoration {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-top: 94px;
+.command-decoration-section {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .command-icon-list {
@@ -313,7 +311,7 @@ li {
   fill: currentColor;
 }
 
-.command-link + .command-link {
+.command-link-item + .command-link-item {
   margin-left: 10px;
 }
 
