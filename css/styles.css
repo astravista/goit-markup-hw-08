@@ -4,7 +4,7 @@
   --color-contact: #757575;
   --card-set-gap: 30px;
   --color-bg: #ffffff;
-  --color-client:#AFB1B8;
+  --color-client: #afb1b8;
 }
 
 html,
@@ -131,7 +131,8 @@ li {
   color: var(--link-navigator);
 }
 
-.icon-mail, .icon-tel {
+.icon-mail,
+.icon-tel {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -140,7 +141,6 @@ li {
 .contact:hover {
   color: var(--link-navigator);
 }
-
 
 /* --двухцветный логотип-- */
 .header-logo,
@@ -315,8 +315,9 @@ li {
   margin-left: 10px;
 }
 
-.command-link:hover, .command-link:focus {
-  background-color: #2196F3;
+.command-link:hover,
+.command-link:focus {
+  background-color: #2196f3;
   color: #ffffff;
 }
 
@@ -370,7 +371,6 @@ li {
 .clients-list {
   display: flex;
   justify-content: space-between;
-  /* color: var(--link-navigator); */
 }
 
 .clients-title {
@@ -378,34 +378,43 @@ li {
 }
 
 .clients-item {
+  display: flex;
   height: 92px;
-  background-color: #ffffff;
+  width: 170px;
   justify-content: center;
   align-items: center;
   border-width: 1px;
   border-style: solid;
-  /* border-color: var(--color-client); */
   border-radius: 4px;
   color: var(--color-client);
 }
 
-/* ховер бордера */
+/* ховер бордера и иконки на работает одновременно */
 
 .client-link {
-  display: flex;
-  padding: 16px 32px;
   fill: var(--color-client);
 }
 
-.client-link:hover, .client-link:focus {
-  fill: var(--link-navigator);
-}
-
-.clients-item:hover, .clients-item:focus {
+.clients-item:hover,
+.clients-item:focus {
   color: var(--link-navigator);
 }
 
-  /* outline: 2px solid red; */
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+  fill: var(--link-navigator);
+}
+
+/* Бордеру не указывай цвет. 
+Задай просто свойство color ссылке и при ховери смени color. 
+Рамка будет наследовать цвет.
+Либо укажи цвет бордеру на ссылке, 
+а при ховере смени его. border-color 
+Лучше переделай на ссылку. 
+Все тот же колор задаёшь ссылке, а иконке currentColor (
+ */
+
+/* outline: 2px solid red; */
 
 /* --кнопка веб-студии -- */
 .button {
@@ -450,7 +459,8 @@ li {
 .button-section:focus {
   color: #ffffff;
   background-color: #188ce8;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* текст в кнопке переносится на другую строку */
@@ -500,7 +510,9 @@ li {
 
 .gallery-section:hover,
 .gallery-section:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .gallery-section-name {
@@ -553,18 +565,13 @@ li {
   margin-left: 70px;
 }
 
-
 .footer-join-links {
   display: flex;
 }
 
 .icon-footer {
-  fill:var(--color-bg);
+  fill: var(--color-bg);
 }
-
-.footer-join-link:hover, .footer-join-link:focus {
-  background-color: var(--link-navigator);
-} 
 
 .footer-link-item {
   display: flex;
@@ -573,6 +580,11 @@ li {
   justify-content: center;
 }
 
+.footer-join-link:hover,
+.footer-join-link:focus {
+  background-color: var(--link-navigator);
+  cursor: pointer;
+}
 
 .footer-join-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -614,7 +626,6 @@ li {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
 
 .link-mail,
 .link-tel {
