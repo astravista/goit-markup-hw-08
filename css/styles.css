@@ -377,42 +377,26 @@ li {
   margin-bottom: 59px;
 }
 
-.clients-item {
+/* ховер бордера и иконки работает одновременно */
+
+.client-link {
   display: flex;
   height: 92px;
   width: 170px;
-  justify-content: center;
-  align-items: center;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
   color: var(--color-client);
-}
-
-/* ховер бордера и иконки на работает одновременно */
-
-.client-link {
   fill: var(--color-client);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.client-link:hover,
+.client-link:focus {
+  fill: var(--link-navigator);
   color: var(--link-navigator);
 }
-
-.client-link:hover .icon-client,
-.client-link:focus .icon-client {
-  fill: var(--link-navigator);
-}
-
-/* Бордеру не указывай цвет. 
-Задай просто свойство color ссылке и при ховери смени color. 
-Рамка будет наследовать цвет.
-Либо укажи цвет бордеру на ссылке, 
-а при ховере смени его. border-color 
-Лучше переделай на ссылку. 
-Все тот же колор задаёшь ссылке, а иконке currentColor (
- */
 
 /* outline: 2px solid red; */
 
