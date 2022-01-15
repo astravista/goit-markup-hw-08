@@ -54,7 +54,7 @@
                 <section class="hero-section">
                     <div class="hero">
                         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                        <button class="button" type="button">Заказать услугу</button>
+                        <button class="button" type="button" data-modal-open>Заказать услугу</button>
                     </div>
                 </section>
             <!-- особенности -->
@@ -109,13 +109,22 @@
                     <h2 class="title-doing-section">Чем мы занимаемся</h2>
                     <ul class="doing-section">
                         <li class="doing-section-images">
-                            <img src="./images/box1.jpg" alt="планшет и клавиатура" width="370">
+                            <div class="doing-title-box">
+                                <img src="./images/box1.jpg" alt="планшет и клавиатура" width="370">
+                                <p class="doing-title">Десктопные приложения</p>
+                            </div>
                         </li>
                         <li class="doing-section-images">
-                            <img src="./images/box2.jpg" alt="ноутбук и телефон" width="370">
-                        </li >
+                            <div class="doing-title-box">
+                                <img src="./images/box2.jpg" alt="ноутбук и телефон" width="370">
+                                <p class="doing-title">Мобильные приложения</p>
+                            </div>
+                        </li>
                         <li class="doing-section-images">
-                            <img src="./images/box3.jpg" alt="планшет" width="370">
+                            <div class="doing-title-box">
+                                <img src="./images/box3.jpg" alt="планшет" width="370">
+                                <p class="doing-title">Дизайнерские решения</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -387,5 +396,15 @@
                 </div>
             </div>
         </footer>
+        <!-- модальное окно -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close><svg class="close-icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
