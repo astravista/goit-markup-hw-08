@@ -402,6 +402,69 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+
+                <!--модальное окно стилизация -->
+                <p class="modal-title">Заголовок формы</p>
+                <form action="#">
+                    <div class="form-field">
+                        <label class="input-text">Введите имя</label>
+                        <input 
+                            type="text" 
+                            class="form-input" 
+                            name="user-name" 
+                            placeholder="Иван Иванов*"
+                            required
+                            minlength="2"
+                        />
+                    </div>
+                    
+                    <div class="form-field">
+                        <label class="input-text" for="">Введите почту</label>
+                        <input type="email" 
+                        class="form-input"
+                        name="user-mail"
+                        placeholder="test@mail"
+                        id="user-mail"
+                        />
+                    </div>
+
+                    <div class="form-field">
+                        <input type="tel" 
+                        class="form-input" 
+                        name="user-tel" 
+                        placeholder="+380 (96) 111-11-11" 
+                        required
+                        title="+380 (96) 111-11-11"
+                        pattern=""
+                        />
+                    </div>
+                    <div class="form-field">
+                        <label for="input-text" for="user-text">Введите коммент</label>
+                        <textarea 
+                        name="user-text" 
+                        id="user-text"
+                        class="form-text"
+                        placeholder="Коммент"
+                    ></textarea>
+                    </div>
+
+                    <!--радиокнопки -->
+
+                    <fieldset class="field">
+                        <legend>Gender</legend>
+                        <label>male
+                            <input type="radio" value="male" name="Gender"/>
+                        </label>
+                        <label>female
+                            <input type="radio" value="female" name="Gender"/>
+                        </label>
+                        <label>other
+                            <input type="radio" value="other" name="Gender"/>
+                        </label>
+                    </fieldset>
+                    <button type="submit">button</button>
+                    <button type="reset">reset</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>

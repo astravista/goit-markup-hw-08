@@ -759,3 +759,52 @@ li {
   pointer-events: none;
   visibility: hidden;
 }
+
+/* модальное окно стилизация */
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-field {
+margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: violet;
+}
+
+.form-input::placeholder {
+  color: tomato;
+}
+
+.input-text {
+  font-size: 12px;
+  color: grey;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-text {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.field {
+  border-color: violet;
+  border: 1px colid;
+}
