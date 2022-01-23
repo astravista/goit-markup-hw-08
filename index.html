@@ -393,6 +393,29 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="footer-newsletter">
+                    <h3 class="footer-title-icon">Подпишитесь на рассылку</h3>
+                    <label for="input-text-newsletter" 
+                    for="user-email"></label>
+                    <div class="input-wrap newsletter-wrap">
+                        <input 
+                            type="email" 
+                            class="form-input-newsletter" 
+                            name="user-mail" 
+                            placeholder="E-mail" 
+                            required
+                            minlength="2" 
+                        />
+                        <button type="submit" 
+                        class="button-form-newsletter">Подписаться
+                            <span>
+                            <svg class="icon-newsletter" width=24px heigth=24px>
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button></span>
+                    </div>
+                </div>
             </div>
         </footer>
         <!-- модальное окно -->
@@ -404,66 +427,83 @@
                 </button>
 
                 <!--модальное окно стилизация -->
-                <p class="modal-title">Заголовок формы</p>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <form action="#">
                     <div class="form-field">
-                        <label class="input-text">Введите имя</label>
-                        <input 
-                            type="text" 
-                            class="form-input" 
-                            name="user-name" 
-                            placeholder="Иван Иванов*"
-                            required
-                            minlength="2"
-                        />
+                        <label for="input-text" for="user-name">Имя</label>
+                        <div class="input-wrap">
+                            <input 
+                                type="text" 
+                                class="form-input" 
+                                name="user-name" 
+                                placeholder=""
+                                required
+                                minlength="2"
+                            />
+                            <svg class="input-icon" width="18" hight="18">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
                     </div>
                     
                     <div class="form-field">
-                        <label class="input-text" for="">Введите почту</label>
-                        <input type="email" 
-                        class="form-input"
-                        name="user-mail"
-                        placeholder="test@mail"
-                        id="user-mail"
-                        />
+                        <label for="input-text" for="user-tel">Телефон</label>
+                        <div class="input-wrap">
+                            <input 
+                                type="tel" 
+                                class="form-input"
+                                name="user-tel"
+                                placeholder=""
+                                required
+                                minlength="2"
+                            />
+                            <svg class="input-icon" width="18" hight="18">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
                     </div>
 
                     <div class="form-field">
-                        <input type="tel" 
-                        class="form-input" 
-                        name="user-tel" 
-                        placeholder="+380 (96) 111-11-11" 
-                        required
-                        title="+380 (96) 111-11-11"
-                        pattern=""
-                        />
+                        <label for="input-text" for="user-mail">Почта</label>
+                        <div class="input-wrap"> 
+                            <input 
+                            type="email" 
+                            class="form-input" 
+                            name="user-mail" 
+                            placeholder="" 
+                            required
+                            minlength="2"
+                            />
+                            <svg class="input-icon" width="18" hight="18">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
                     </div>
+                    
                     <div class="form-field">
-                        <label for="input-text" for="user-text">Введите коммент</label>
+                        <label for="input-text" for="user-text">Комментарий</label>
                         <textarea 
                         name="user-text" 
                         id="user-text"
                         class="form-text"
-                        placeholder="Коммент"
+                        placeholder="Введите текст"
                     ></textarea>
                     </div>
-
+                    <div class="form-field">
+                        <input 
+                        type="checkbox" 
+                        name="policy" 
+                        id="policy" 
+                        class="policy-check visualy-hidden"
+                        />
+                        <label for="policy" 
+                        class="check-text">
+                            <span class="left-check-text">Соглашаюсь с рассылкой и принимаю </span><span class="right-check-text">Условия договора</span> 
+                        </label>
+                    </div>
                     <!--радиокнопки -->
 
-                    <fieldset class="field">
-                        <legend>Gender</legend>
-                        <label>male
-                            <input type="radio" value="male" name="Gender"/>
-                        </label>
-                        <label>female
-                            <input type="radio" value="female" name="Gender"/>
-                        </label>
-                        <label>other
-                            <input type="radio" value="other" name="Gender"/>
-                        </label>
-                    </fieldset>
-                    <button type="submit">button</button>
-                    <button type="reset">reset</button>
+                    <button type="submit" class="button-form">Отправить</button>
                 </form>
             </div>
         </div>
