@@ -1,6 +1,5 @@
 .features-decoration {
   padding-top: 94px;
-  /* outline: 2px solid red; */
 }
 
 .features {
@@ -18,8 +17,7 @@
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
+  @extend %align-list;
 }
 
 .features-title {

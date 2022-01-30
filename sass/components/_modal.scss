@@ -33,25 +33,22 @@
   border-radius: 50%;
   display: flex;
   position: absolute;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
   top: 8px;
   right: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-wrap:hover, .input-wrap:focus {
-  cursor: pointer;
-  fill: var(--link-navigator);
+  &:hover,
+  &:focus {
+    fill: var(--link-navigator);
+  }
 }
 
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close:hover .close-icon,
-.modal-close:focus .close-icon {
+  &:hover,
+  &:focus {
   fill: var(--link-navigator);
+  }
 }
 
 .is-hidden {
@@ -59,8 +56,6 @@
   pointer-events: none;
   visibility: hidden;
 }
-
-/* модальное окно стилизация */
 
 .modal-title {
   font-weight: 700;
@@ -88,23 +83,26 @@
   padding-left: 40px;
   cursor: pointer;
   outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.form-input::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input:hover,
-.form-input:focus {
-  border: 1px solid var(--link-navigator);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--link-navigator);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .input-wrap {
   position: relative;
+  &:hover, 
+  &:focus {
+  cursor: pointer;
+  fill: var(--link-navigator);
+  }
 }
 
 .input-icon {
@@ -139,12 +137,11 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.form-text:hover,
-.form-text:focus {
-  border: 1px solid var(--link-navigator);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--link-navigator);
+  }
 }
 
 .check-text {
@@ -164,8 +161,7 @@
   margin-right: 8px;
   margin-left: 12px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
 }
 
 .icon-check {
@@ -208,9 +204,8 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-}
-
-.button-form:hover,
-.button-form:focus {
+  &:hover,
+  &:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
