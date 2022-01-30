@@ -1,0 +1,21 @@
+html,
+portfolio {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: var(--brand-color);
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}

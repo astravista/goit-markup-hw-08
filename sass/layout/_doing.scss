@@ -1,0 +1,50 @@
+.doing-decoration {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  align-content: center;
+}
+
+.doing-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-doing-section,
+.command-title,
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* заголовки под картинками */
+.doing-title-box {
+  position: relative;
+}
+
+.doing-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  justify-content: center;
+  color: #ffffff;
+  padding: 27px 0 27px 0;
+  width: 100%;
+  height: 70px;
+}
+
+.doing-section {
+  margin-top: 50px;
+}

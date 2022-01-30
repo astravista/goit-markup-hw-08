@@ -1,0 +1,39 @@
+.features-decoration {
+  padding-top: 94px;
+  /* outline: 2px solid red; */
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list {
+  width: 270px;
+  height: 250px;
+}
+
+.list-item {
+  display: flex;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--color-contact);
+  margin-top: 10px;
+}
