@@ -2,17 +2,17 @@
   padding-top: 94px;
 }
 
-.features {
+.features-decoration__item {
   display: flex;
   justify-content: space-between;
 }
 
-.features-list {
+.features-decoration__list {
   width: 270px;
   height: 250px;
 }
 
-.list-item {
+.features-decoration___list-item {
   display: flex;
   height: 120px;
   background-color: #f5f4fa;
@@ -20,7 +20,7 @@
   @extend %align-list;
 }
 
-.features-title {
+.features-decoration__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -28,7 +28,7 @@
   text-transform: uppercase;
 }
 
-.features-text {
+.features-decoration__text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;

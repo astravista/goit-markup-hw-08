@@ -4,23 +4,24 @@
   align-content: center;
 }
 
-.doing-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.title-doing-section,
-.command-title,
-.clients-title {
+.doing-decoration__title,
+.command-decoration__title,
+.clients__title {
   @include font(36px, 700, 1.2, 0.03em);
   text-align: center;
 }
 
-.doing-title-box {
+.doing-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.doing-section__box {
   position: relative;
 }
 
-.doing-title {
+.doing-section__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -37,6 +38,3 @@
   height: 70px;
 }
 
-.doing-section {
-  margin-top: 50px;
-}

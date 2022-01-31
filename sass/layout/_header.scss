@@ -28,12 +28,12 @@
   margin-left: auto;
 }
 
-.site-contact .item + .item {
+.site-contact .site-contact__item + .site-contact__item {
   margin-left: 30px;
 }
 
 .site-nav,
-.link,
+.site-nav__link,
 .header__logo {
   text-decoration: none;
   color: #000000;
@@ -54,8 +54,8 @@
 }
 
 .site-nav,
-.link:focus,
-.link:hover {
+.site-nav__link:focus,
+.site-nav__link:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -78,7 +78,7 @@
   }
 }
 
-.header-link-icon {
+.site-contact__icon {
   color: var(--color-contact);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -94,7 +94,7 @@
 }
 
 .header__logo,
-.header-logo-web {
+.header__logo-web {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -107,6 +107,6 @@
   color: #000000;
 }
 
-.header-logo-web {
+.header__logo-web {
   color: var(--link-navigator);
 }

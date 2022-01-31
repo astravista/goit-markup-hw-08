@@ -16,7 +16,8 @@
   min-height: 580px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,7 +48,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-  fill: var(--link-navigator);
+    fill: var(--link-navigator);
   }
 }
 
@@ -98,10 +99,10 @@
 
 .input-wrap {
   position: relative;
-  &:hover, 
+  &:hover,
   &:focus {
-  cursor: pointer;
-  fill: var(--link-navigator);
+    cursor: pointer;
+    fill: var(--link-navigator);
   }
 }
 
@@ -113,7 +114,10 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-text, .user-mail, .user-tel, .user-name {
+.user-text,
+.user-mail,
+.user-tel,
+.user-name {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -165,7 +169,7 @@
 }
 
 .icon-check {
-  fill:transparent;
+  fill: transparent;
 }
 
 .policy-check:checked + .check-text span {
@@ -206,6 +210,6 @@
   justify-content: center;
   &:hover,
   &:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
