@@ -32,6 +32,30 @@
                     <li><a class="site-nav__link header-link" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a></li>
                     <li><a class="site-nav__link header-link" href="">Контакты</a></li>
                 </ul>
+                    
+                <button type="button" class="menu-button is-open"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button
+                >
+                    <svg 
+                        width="40" 
+                        height="40"
+                        aria-label="Переключатель мобильного меню"
+                    >
+                        <use class="icon-close24" href="./images/icons.svg#icon-close_24px"></use>
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                
+                </button>
+
+
+                <div class="menu-container" id="menu-container" data-menu>
+                    <div class="navigation"></div>
+                    <div class="contacts"></div>
+                </div>
+
+
                 <ul class="site-contact">
                     <li class="site-contact__item mail">
                         <a class="contact site-contact__icon" href="mailto:info@devstudio.com">
@@ -54,7 +78,7 @@
                 <section class="hero-section">
                     <div class="hero-solutions">
                         <h1 class="hero-solutions__title">Эффективные решения для вашего бизнеса</h1>
-                        <button class="hero-solutions__button" type="button" data-modal-open>Заказать услугу</button>
+                        <button class="hero-solutions__button" type="button" data-modal-open modal-open>Заказать услугу</button>
                     </div>
                 </section>
             <!-- особенности -->

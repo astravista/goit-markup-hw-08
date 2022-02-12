@@ -5,6 +5,8 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opasity 500ms, visibility 500ms;
+
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {

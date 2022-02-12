@@ -6,6 +6,7 @@
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .container__header {
@@ -15,6 +16,8 @@
   padding-bottom: 24px;
   align-items: center;
   background: var(--color-bg);
+
+  justify-content: space-between
 }
 
 .site-nav {
@@ -109,4 +112,10 @@
 
 .header__logo-web {
   color: var(--link-navigator);
+}
+
+.site-nav, .site-contact {
+@media screen and (max-width: 767px) {
+  display: none;
+  }
 }
