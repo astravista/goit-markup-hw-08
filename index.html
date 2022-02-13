@@ -23,16 +23,10 @@
         <header class="page-header">
             <div class="container__header container">
                 <a class="logo header__logo" href="/">
-                    <span class="header__logo-web">Web</span><span class="header-logo-studio">Studio</span> 
-                </a> 
-                    <!-- ccылки навигации -->
-                <!-- <nav class="nav-header-container"></nav> -->
-                <ul class="site-nav">
-                    <li><a class="site-nav__link header-link сurrent" href="./index.html" rel="noopener noreferrer">Студия</a></li>
-                    <li><a class="site-nav__link header-link" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a></li>
-                    <li><a class="site-nav__link header-link" href="">Контакты</a></li>
-                </ul>
-                    
+                    <span class="header__logo-web">Web</span><span class="header-logo-studio">Studio</span>
+                </a>
+                <!-- ccылки навигации -->
+                
                 <button type="button" class="menu-button is-open"
                 aria-expanded="false"
                 aria-controls="menu-container"
@@ -43,34 +37,39 @@
                         height="40"
                         aria-label="Переключатель мобильного меню"
                     >
-                        <use class="icon-close24" href="./images/icons.svg#icon-close_24px"></use>
-                        <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+                        <use class="icon-close24" href="./images/icons.svg#icon-close_24px" hight="18" width="18"></use>
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu_24px" hight="16" width="24"></use>
                     </svg>
-                
                 </button>
 
-
                 <div class="menu-container" id="menu-container" data-menu>
-                    <div class="navigation"></div>
-                    <div class="contacts"></div>
+                    <div class="navigation">
+                        
+                        <ul class="site-nav">
+                            <li><a class="site-nav__link header-link сurrent" href="./index.html" rel="noopener noreferrer">Студия</a></li>
+                            <li><a class="site-nav__link header-link" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a></li>
+                            <li><a class="site-nav__link header-link" href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+                        <ul class="site-contact">
+                            <li class="site-contact__item mail">
+                                <a class="contact site-contact__icon" href="mailto:info@devstudio.com">
+                                    <svg class="icon-mail" width="16" height="12">
+                                        <use href="./images/icons.svg#icon-envelope"></use>
+                                    </svg>info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="site-contact__item tel"><a class="contact site-contact__icon" href="tel:+380961111111">
+                                    <svg class="icon-tel" width="10" height="16">
+                                        <use href="./images/icons.svg#icon-smartphone"></use>
+                                    </svg>+38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-
-                <ul class="site-contact">
-                    <li class="site-contact__item mail">
-                        <a class="contact site-contact__icon" href="mailto:info@devstudio.com">
-                            <svg class="icon-mail" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="site-contact__item tel"><a class="contact site-contact__icon" href="tel:+380961111111">
-                            <svg class="icon-tel" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                
             </div>
         </header>
             <main>
@@ -159,7 +158,12 @@
                     <h2 class="command-decoration__title">Наша команда</h2>
                     <ul class="command-decoration__list"> 
                         <li class="command-decoration__item">
-                            <img src="./images/demyanenko.jpg" alt="Игорь Демьяненко"width="270">
+                            <img 
+                            srcset="./images/demyanenko_1x.jpg 1x, ./images/demyanenko_2x.jpg 2x" 
+                            src="./images/demyanenko.jpg"
+                            alt="Игорь Демьяненко" 
+                            width="450"
+                            />
                             <div class="command-decoration__item-name">
                                 <h3 class="command-decoration__name">Игорь Демьяненко</h3>
                                 <p class="command-decoration__post" lang="en">Product Designer</p>
