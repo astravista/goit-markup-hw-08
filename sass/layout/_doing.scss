@@ -8,8 +8,7 @@
   }
 }
 
-.doing-decoration__title,
-.clients__title {
+.doing-decoration__title {
   @include font(36px, 700, 1.2, 0.03em);
   text-align: center;
 }
