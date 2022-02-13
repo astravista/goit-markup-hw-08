@@ -25,46 +25,59 @@
                 <a class="logo header__logo" href="/">
                     <span class="header__logo-web">Web</span><span class="header-logo-studio">Studio</span>
                 </a>
-                <!-- ccылки навигации -->
-                
-                <button type="button" class="menu-button is-open"
-                aria-expanded="false"
-                aria-controls="menu-container"
-                data-menu-button
-                >
-                    <svg 
-                        width="40" 
-                        height="40"
-                        aria-label="Переключатель мобильного меню"
-                    >
+
+                <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="icon-close24" href="./images/icons.svg#icon-close_24px" hight="18" width="18"></use>
                         <use class="icon-menu" href="./images/icons.svg#icon-menu_24px" hight="16" width="24"></use>
                     </svg>
                 </button>
 
+                <!-- ccылки навигации -->
+                <div class="navigation">
+                    <ul class="site-nav">
+                        <li><a class="site-nav__link header-link сurrent" href="./index.html" rel="noopener noreferrer">Студия</a></li>
+                        <li><a class="site-nav__link header-link" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a></li>
+                        <li><a class="site-nav__link header-link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul class="site-contact">
+                        <li class="site-contact__item mail">
+                            <a class="contact site-contact__icon" href="mailto:info@devstudio.com">
+                                <svg class="icon-mail" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="site-contact__item tel"><a class="contact site-contact__icon" href="tel:+380961111111">
+                                <svg class="icon-tel" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
                 <div class="menu-container" id="menu-container" data-menu>
-                    <div class="navigation">
-                        
-                        <ul class="site-nav">
-                            <li><a class="site-nav__link header-link сurrent" href="./index.html" rel="noopener noreferrer">Студия</a></li>
-                            <li><a class="site-nav__link header-link" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a></li>
-                            <li><a class="site-nav__link header-link" href="">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="contacts">
-                        <ul class="site-contact">
-                            <li class="site-contact__item mail">
-                                <a class="contact site-contact__icon" href="mailto:info@devstudio.com">
-                                    <svg class="icon-mail" width="16" height="12">
-                                        <use href="./images/icons.svg#icon-envelope"></use>
-                                    </svg>info@devstudio.com
+                    <div class="mob-menu">
+                        <ul class="mob-menu-list">
+                            <li class="mob-menu-list__item"><a class="mob-menu-list__link сurrent" href="./index.html" rel="noopener noreferrer">Студия</a></li>
+                            <li class="mob-menu-list__item"><a class="mob-menu-list__link" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a></li>
+                            <li class="mob-menu-list__item"><a class="mob-menu-list__link" href="">Контакты</a></li>
+                            <li class="mob-menu-list__item-tel">
+                                <a class="mob-menu-list__icon-tel" 
+                                href="tel:+380961111111">+38 096 111 11 11
                                 </a>
                             </li>
-                            <li class="site-contact__item tel"><a class="contact site-contact__icon" href="tel:+380961111111">
-                                    <svg class="icon-tel" width="10" height="16">
-                                        <use href="./images/icons.svg#icon-smartphone"></use>
-                                    </svg>+38 096 111 11 11
+                            <li class="mob-menu-list__item mail">
+                                <a class="mob-menu-list__icon-mail" 
+                                href="mailto:info@devstudio.com">info@devstudio.com
                                 </a>
+                            </li>
+                            <li class="">
+                                
                             </li>
                         </ul>
                     </div>
@@ -158,12 +171,26 @@
                     <h2 class="command-decoration__title">Наша команда</h2>
                     <ul class="command-decoration__list"> 
                         <li class="command-decoration__item">
-                            <img 
-                            srcset="./images/demyanenko_1x.jpg 1x, ./images/demyanenko_2x.jpg 2x" 
-                            src="./images/demyanenko.jpg"
-                            alt="Игорь Демьяненко" 
-                            width="450"
-                            />
+                            <picture>
+                                <source
+                                    srcset="./images/demyanenko_1x.jpg 1x, 
+                                    ./images/demyanenko_2x.jpg 2x"
+                                    media="(min-width: 320px)"
+                                />
+                                <source srcset="./images/demyanenko_tablet_1x.jpg 1x, 
+                                    ./images/demyanenko__tablet_2x.jpg 2x" 
+                                    media="(min-width: 768px)" 
+                                />
+                                <source srcset="./images/demyanenko_desktop_1x.jpg 1x, 
+                                    ./images/demyanenko__desctop_2x.jpg 2x" 
+                                    media="(min-width: 1200px)" 
+                                />
+                                <img 
+                                src="./images/demyanenko.jpg"
+                                alt="Игорь Демьяненко" 
+                                />
+                            </picture>
+                            
                             <div class="command-decoration__item-name">
                                 <h3 class="command-decoration__name">Игорь Демьяненко</h3>
                                 <p class="command-decoration__post" lang="en">Product Designer</p>
@@ -200,7 +227,21 @@
                             </div>
                         </li>
                         <li class="command-decoration__item">
-                            <img src="./images/repina.jpg" alt="Ольга Репина" width="270">
+                            <picture>
+                                <source srcset="./images/repina_1x.jpg 1x, 
+                                ./images/repina_2x.jpg 2x" 
+                                media="(min-width: 320px)" />
+                                <source srcset="./images/repina_tablet_1x.jpg 1x, 
+                                ./images/repina__tablet_2x.jpg 2x" 
+                                media="(min-width: 768px)" />
+                                <source srcset="./images/repina_desktop_1x.jpg 1x, 
+                                ./images/repina__desctop_2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                                <img 
+                                src="./images/repina.jpg" 
+                                alt="Ольга Репина" />
+                            </picture>
+
                             <div class="command-decoration__item-name"> 
                                 <h3 class="command-decoration__name">Ольга Репина</h3>
                                 <p class="command-decoration__post" lang="en">Frontend Developer</p>
@@ -238,7 +279,21 @@
                         </li>
 
                         <li class="command-decoration__item">
-                            <img src="./images/tarasov.jpg" alt="Николай Тарасов" width="270">
+                            <picture>
+                                <source srcset="./images/tarasov_1x.jpg 1x, 
+                                ./images/tarasov_2x.jpg 2x" 
+                                media="(min-width: 320px)" />
+                                <source srcset="./images/tarasov_tablet_1x.jpg 1x, 
+                                ./images/tarasov__tablet_2x.jpg 2x" 
+                                media="(min-width: 768px)" />
+                                <source srcset="./images/tarasov_desktop_1x.jpg 1x, 
+                                ./images/tarasov__desctop_2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                                <img 
+                                src="./images/tarasov.jpg" 
+                                alt="Николай Тарасов" />
+                            </picture>
+                            
                             <div class="command-decoration__item-name">
                                 <h3 class="command-decoration__name">Николай Тарасов</h3>
                                 <p class="command-decoration__post" lang="en">Marketing</p>
@@ -276,7 +331,21 @@
                         </li>
 
                         <li class="command-decoration__item">
-                            <img src="./images/Ermakov.jpg" alt="Михаил Ермаков" width="270">
+                            <picture>
+                                <source srcset="./images/ermakov_1x.jpg 1x, 
+                                ./images/ermakov_2x.jpg 2x" 
+                                media="(min-width: 320px)" />
+                                <source srcset="./images/ermakov_tablet_1x.jpg 1x, 
+                                ./images/ermakov__tablet_2x.jpg 2x" 
+                                media="(min-width: 768px)" />
+                                <source srcset="./images/ermakov_desktop_1x.jpg 1x, 
+                                ./images/ermakov__desctop_2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                                <img 
+                                src="./images/ermakov.jpg" 
+                                alt="Михаил Ермаков" />
+                            </picture>
+                            
                             <div class="command-decoration__item-name">
                                 <h3 class="command-decoration__name">Михаил Ермаков</h3>
                                 <p class="command-decoration__post" lang="en">UI Designer</p>
@@ -315,7 +384,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section-clients">
+            <!-- <section class="section-clients">
                 <div class="container clients">
                     <h2 class="clients__title">Постоянные клиенты</h2>
                     <ul class="clients__list">
@@ -363,10 +432,10 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
         </main>
         <!-- подвал -->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="footer-decoration container"> 
                 <div>
                     <p class="footer__logo-title">
@@ -445,7 +514,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- модальное окно -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
