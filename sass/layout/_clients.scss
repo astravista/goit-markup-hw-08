@@ -42,13 +42,12 @@
 }
 
 .clients__title {
-  margin-bottom: 59px;
-
   @include font(28px, 700, 1.2, 0.03em);
   text-align: center;
 
   @media screen and (min-width: 1200px) {
     @include font(36px, 700, 1.2, 0.03em);
+    margin-bottom: 59px;
   }
 }
 
