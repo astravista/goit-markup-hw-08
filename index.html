@@ -191,19 +191,41 @@
                     <ul class="doing-section">
                         <li class="doing-section__images">
                             <div class="doing-section__box">
-                                <img src="./images/box1.jpg" alt="планшет и клавиатура" width="370">
+                                <picture>
+                                    <source srcset="./images/box1_desktop_1x.jpg 1x,
+                                    ./images/box1_desktop_2x.jpg 2x"
+                                    media="(min-width: 480px)"
+                                    />
+                                </picture>
+                                <img src="./images/box1.jpg" 
+                                alt="планшет и клавиатура"
+                                />
                                 <p class="doing-section__title">Десктопные приложения</p>
                             </div>
                         </li>
                         <li class="doing-section__images">
                             <div class="doing-section__box">
-                                <img src="./images/box2.jpg" alt="ноутбук и телефон" width="370">
+                                <picture>
+                                    <source srcset="./images/box2_desktop_2x.jpg 1x,
+                                    ./images/box2_desktop_2x.jpg 2x" 
+                                    media="(min-width: 480px)" 
+                                    />
+                                </picture>
+                                <img src="./images/box2.jpg" 
+                                alt="ноутбук и телефон">
                                 <p class="doing-section__title">Мобильные приложения</p>
                             </div>
                         </li>
                         <li class="doing-section__images">
                             <div class="doing-section__box">
-                                <img src="./images/box3.jpg" alt="планшет" width="370">
+                                <picture>
+                                    <source srcset="./images/box3_desktop_2x.jpg 1x,
+                                    ./images/box3_desktop_2x.jpg 2x" 
+                                    media="(min-width: 480px)" 
+                                    />
+                                </picture>
+                                <img src="./images/box3.jpg" 
+                                alt="планшет">
                                 <p class="doing-section__title">Дизайнерские решения</p>
                             </div>
                         </li>
@@ -221,12 +243,12 @@
                                     ./images/demyanenko_2x.jpg 2x"
                                     media="(min-width: 320px)"
                                 />
-                                <source srcset="./images/demyanenko_tablet_1x.jpg 1x, 
-                                    ./images/demyanenko__tablet_2x.jpg 2x" 
+                                <source srcset="./images/demyanenko_tablet_1_x.jpg 1x, 
+                                    ./images/demyanenko_tablet_2_x.jpg 2x" 
                                     media="(min-width: 768px)" 
                                 />
                                 <source srcset="./images/demyanenko_desktop_1x.jpg 1x, 
-                                    ./images/demyanenko__desctop_2x.jpg 2x" 
+                                    ./images/demyanenko_desktop_2x.jpg 2x" 
                                     media="(min-width: 1200px)" 
                                 />
                                 <img 
@@ -276,10 +298,10 @@
                                 ./images/repina_2x.jpg 2x" 
                                 media="(min-width: 320px)" />
                                 <source srcset="./images/repina_tablet_1x.jpg 1x, 
-                                ./images/repina__tablet_2x.jpg 2x" 
+                                ./images/repina_tablet_2x.jpg 2x" 
                                 media="(min-width: 768px)" />
                                 <source srcset="./images/repina_desktop_1x.jpg 1x, 
-                                ./images/repina__desctop_2x.jpg 2x" 
+                                ./images/repina_desktop_2x.jpg 2x" 
                                 media="(min-width: 1200px)" />
                                 <img 
                                 src="./images/repina.jpg" 
@@ -328,10 +350,10 @@
                                 ./images/tarasov_2x.jpg 2x" 
                                 media="(min-width: 320px)" />
                                 <source srcset="./images/tarasov_tablet_1x.jpg 1x, 
-                                ./images/tarasov__tablet_2x.jpg 2x" 
+                                ./images/tarasov_tablet_2x.jpg 2x" 
                                 media="(min-width: 768px)" />
                                 <source srcset="./images/tarasov_desktop_1x.jpg 1x, 
-                                ./images/tarasov__desctop_2x.jpg 2x" 
+                                ./images/tarasov_desktop_2x.jpg 2x" 
                                 media="(min-width: 1200px)" />
                                 <img 
                                 src="./images/tarasov.jpg" 
@@ -380,10 +402,10 @@
                                 ./images/ermakov_2x.jpg 2x" 
                                 media="(min-width: 320px)" />
                                 <source srcset="./images/ermakov_tablet_1x.jpg 1x, 
-                                ./images/ermakov__tablet_2x.jpg 2x" 
+                                ./images/ermakov_tablet_2x.jpg 2x" 
                                 media="(min-width: 768px)" />
                                 <source srcset="./images/ermakov_desktop_1x.jpg 1x, 
-                                ./images/ermakov__desktop_2x.jpg 2x" 
+                                ./images/ermakov_desktop_2x.jpg 2x" 
                                 media="(min-width: 1200px)" />
                                 <img 
                                 src="./images/ermakov.jpg" 
@@ -479,7 +501,7 @@
             </section>
         </main>
         <!-- подвал -->
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="footer-decoration container"> 
                 <div>
                     <p class="footer__logo-title">
@@ -558,7 +580,7 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
         <!-- модальное окно -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">

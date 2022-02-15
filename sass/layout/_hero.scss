@@ -2,8 +2,10 @@
   display: block;
   text-align: center;
   background: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin: 0 auto;
   background-image: linear-gradient(
       to right,
@@ -15,8 +17,6 @@
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  // max-width: 1600px;
-  // height: 600px;
 }
 
 @media (min-resolution: 2dppx) {
@@ -25,9 +25,11 @@
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 1199px)  {
   .hero-solutions {
     background-image: url("../images/header_tablet_1x.jpg");
+    padding-left: 204px;
+    padding-right: 204px;
   }
 }
 
@@ -37,9 +39,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero-solutions {
     background-image: url("../images/header_desktop_1x.jpg");
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   @media (min-resolution: 2dppx) {
