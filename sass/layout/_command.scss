@@ -107,14 +107,14 @@
 .command-decoration__name {
   margin-bottom: 10px;
   @media screen and (max-width: 1199px) {
-  margin-top: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
   }
 
   @media screen and (min-width: 1200px) {
-  margin-top: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap);
-  @include font($fw: 500, $lh: 1.2, $ls: 0.03em);
-  text-align: center;
+    margin-top: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+    @include font($fw: 500, $lh: 1.2, $ls: 0.03em);
+    text-align: center;
   }
 }
 
