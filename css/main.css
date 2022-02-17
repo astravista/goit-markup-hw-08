@@ -1303,9 +1303,11 @@ li {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-decoration {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -1315,12 +1317,18 @@ li {
   }
 }
 
-.footer-decoration__block {
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .footer__join {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 60px;
+  }
 }
 
-.footer__join {
-  margin-left: 70px;
+@media screen and (max-width: 767px) and (min-width: 1200px) {
+  .footer__join {
+    margin-left: 70px;
+  }
 }
 
 .footer__join-list {
@@ -1354,6 +1362,13 @@ li {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__join-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .footer__logo {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -1365,8 +1380,21 @@ li {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    font-size: 24px;
+  }
+}
+
 .footer__logo-title {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__logo-title {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__logo-web {
@@ -1403,12 +1431,28 @@ li {
   color: #ffffff;
 }
 
-.footer__link:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer__link:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
-.footer-newsletter {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .footer__link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-newsletter {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-newsletter {
+    margin-left: 93px;
+  }
 }
 
 .footer-newsletter__wrap {
@@ -1456,5 +1500,12 @@ li {
   height: 24px;
   margin-left: 10px;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__link {
+    display: flex;
+    justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

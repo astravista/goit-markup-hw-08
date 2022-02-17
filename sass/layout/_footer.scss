@@ -16,25 +16,31 @@
   text-transform: uppercase;
   color: var(--color-bg);
   margin-bottom: 20px;
-}
+  }
 
 .footer-decoration {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
-.footer-decoration__block {
-  text-align: center;
-}
-
 .footer__join {
+  @media screen and (max-width: 767px) {
+  justify-content: center;
+  margin-left: 0;
+  margin-top: 60px;
+
+  @media screen and (min-width: 1200px) {
   margin-left: 70px;
+  }
+}
 }
 
 .footer__join-list {
@@ -61,12 +67,19 @@
   &:focus {
     background-color: var(--link-navigator);
     cursor: pointer;
-  }
+}
 }
 
 .footer__join-item {
   & + & {
     margin-left: 10px;
+  }
+}
+
+.footer__join-title {
+  @media screen and (max-width: 767px) {
+  display: flex;
+  justify-content: center;
   }
 }
 
@@ -79,11 +92,19 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .footer__logo-title {
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+  display: flex;
+  justify-content: center;
+  }
 }
+
 
 .footer__logo-web {
   color: var(--link-navigator);
@@ -116,12 +137,26 @@
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px){
 .footer__link:not(:last-child) {
+  margin-bottom: 8px;
+}
+}
+
+  @media screen and (min-width: 1200px) {
+    .footer__link:not(:last-child) {
   margin-bottom: 9px;
+  }
 }
 
 .footer-newsletter {
+  
+@media screen and (min-width: 768px) {
+  margin: 0;
+  }
+@media screen and (min-width: 1200px) {
   margin-left: 93px;
+}
 }
 
 .footer-newsletter__wrap {
@@ -168,4 +203,11 @@
   height: 24px;
   margin-left: 10px;
   align-items: center;
+}
+
+.footer__link {
+  @media screen and (max-width: 767px) {
+  display: flex;
+  justify-content: center;
+  }
 }
