@@ -723,7 +723,7 @@ li {
   max-width: 100%;
 }
 
-@media (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero-solutions {
     background-image: url("../images/header_mobile_2x.jpg");
     max-width: 100%;
@@ -731,21 +731,21 @@ li {
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-solutions {
     background-image: url("../images/header_tablet_1x.jpg");
     margin: 0 auto;
   }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero-solutions {
     background-image: url("../images/header_tablet_2x.jpg");
     margin: 0 auto;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero-solutions {
     background-image: url("../images/header_desktop_1x.jpg");
     margin: 0 auto;
@@ -754,7 +754,7 @@ li {
   }
 }
 
-@media (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-solutions {
     background-image: url("../images/header_desktop_2x.jpg");
     margin: 0 auto;
@@ -1156,6 +1156,7 @@ li {
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
     flex-basis: calc(100% / 4 - 30px);
   }
   .clients__list:last-child,
@@ -1343,7 +1344,7 @@ li {
   .footer__first {
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: start;
     margin-top: 0;
   }
 }
@@ -1371,7 +1372,7 @@ li {
   .footer__join {
     margin-left: 70px;
     justify-content: center;
-    text-align: center;
+    text-align: start;
   }
 }
 
@@ -1503,12 +1504,15 @@ li {
   }
 }
 
-.footer-newsletter {
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .footer-newsletter {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer-newsletter {
+    text-align: center;
     margin: 0;
     margin-top: 60px;
   }
@@ -1518,6 +1522,7 @@ li {
   .footer-newsletter {
     margin-left: 93px;
     margin-top: 0;
+    text-align: start;
   }
 }
 
@@ -1544,8 +1549,9 @@ li {
 
 @media screen and (min-width: 1200px) {
   .button-form-newsletter {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 12px;
+    margin-right: auto;
+    margin-top: 0;
   }
 }
 
@@ -1600,6 +1606,12 @@ li {
 @media screen and (max-width: 1199px) {
   .footer-decoration__block {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-newsletter__wrap {
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
