@@ -43,7 +43,6 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -51,8 +50,8 @@
 
     &.is-open {
       display: block;
+      position: absolute;
     }
-    
   }
 
   @media screen and (min-width: 768px) {
